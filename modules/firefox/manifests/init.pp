@@ -1,8 +1,7 @@
 class firefox {
 
   exec { "apt-update":
-    command => "/usr/bin/apt-get update",
-		refreshonly => true
+    command => "/usr/bin/apt-get update"
   }
 
   package { "firefox":
